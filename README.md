@@ -51,9 +51,6 @@ xtest_obfuscated.txt <br />
 xtrain_obfuscated.txt <br />
 ytrain.txt <br />
 
-instruction -----------------> contains provided instruction file <br />
-instructions.txt <br />
-
 results ---------------------> contains model's captured results <br />
 model-accuracy.png ------> plot of train and test model accuracy vs epoch<br />
 model-loss.png ----------> plot of train and test model loss vs epoch <br />
