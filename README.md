@@ -1,6 +1,42 @@
 # Sentence-Classification
 # Character Level CNN using Tensorflow and Keras
 
+## Which Novel Do I Belong To?
+
+In this task, you are expected to learn a Machine Learning model that classifies a given line as belonging to one of the following 12 novels:
+
+0: alice_in_wonderland
+
+1: dracula
+
+2: dubliners
+
+3: great_expectations
+
+4: hard_times
+
+5: huckleberry_finn
+
+6: les_miserable
+
+7: moby_dick
+
+8: oliver_twist
+
+9: peter_pan
+
+10: talw_of_two_cities
+
+11: tom_sawyer
+
+
+
+## Description:
+
+The data for this problem contains three text files - xtrain.txt, ytrain.txt, xtest.txt. Each line in xtrain.txt comes from a different novel. However, the data has been obfuscated, but the patterns in it are preserved. The corresponding novel ids are specified in ytrain.txt. This data is used to train a Deep Learning model. 
+
+With the learned model, predict the novel ids of the lines in xtest.txt (one prediction per line). 
+
 ## Infrastructure, Technologies and Tools used
 1. Windows 10
 2. Python 3.5.2
