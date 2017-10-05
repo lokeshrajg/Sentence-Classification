@@ -61,6 +61,13 @@ config.py -------------------> Models configurations are set <br />
 data_utils.py ---------------> Loading and preprocessing data <br />
 
 
+## Data Understanding, Idea and Data Preparation
+The text is unclear and not human understandable. If it would have words from any language (human understandable), then I would have used the Word2Vec model to generate vectors for this text. However, I am  using character level information (vectors) to train the model for classification.
+
+The idea came from the paper titled \href{https://arxiv.org/pdf/1502.01710.pdf}{Text Understanding from Scratch}. The author demonstrates text understanding from character level inputs, using convolutional neural network.
+
+In the next step, I try to understand train and test text. I find 83 and 80 unique characters in the train and test text respectively. I also see the frequency of each character in the both texts. The extra characters (3 in train text) in the train text are infrequent and, there are other 2 characters which are very infrequent in the both texts. Due to infrequent occurrence, these characters do not help much in learning the model. Therefore, I replace all these characters with one unique character. Now, we remain with 78 unique characters in the text. I also find average and maximum character length of each sentence. The 453 and 415 are the maximum and the average character length of sentences from the text respectively. I also find the distribution of 12 classes from the train data as. The distribution of classes is not uniform as shown in ![class_distribution](https://user-images.githubusercontent.com/17526799/28752285-cea09dc4-751b-11e7-830f-ccd633f490c2.png).
+
 ## How to use
 
 Run character_cnn.py as below:
